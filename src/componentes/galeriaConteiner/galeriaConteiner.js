@@ -1,15 +1,27 @@
 import {useEffect, useState} from 'react'
-import { getProducts } from '../../Productos'
+import { getProducts, getProductsByCategory } from '../../Productos'
+import { useParams } from 'react-router-dom'
 import ListaProductos from '../listaProductos/listaProductos'
 
 const GaleriaConteiner = (props) => {
     const [products, setProducts] = useState([])
+    const {idcategoria} = useParams()
 
     useEffect(() => {
-        getProducts().then(response => {
-            setProducts(response)
-        })
-    }, [])
+        if (!idcategoria) {
+            getProducts().then(response => {
+                setProducts(response)
+            }).catch(error => {
+                console.log(error)
+            })
+        }else {
+            getProductsByCategory(idcategoria).then(response => {
+                setProducts(response)
+            }).catch(error => {
+                console.log(error)
+            })
+        }
+    }, [idcategoria])
 
     return (
         <div>
