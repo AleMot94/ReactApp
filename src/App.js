@@ -8,8 +8,10 @@ function App() {
     <div className="App">
       <header>
         <Navbar/>
-        <GaleriaConteiner titulo="Productos"/>
       </header>
+      <main>
+        <GaleriaConteiner titulo="Productos"/>
+      </main>
     </div>
   );
 }
