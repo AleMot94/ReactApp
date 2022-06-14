@@ -16,7 +16,7 @@ const DetalleProductoContainer = () => {
     return (
         <>
             <h4>Descripcion Producto</h4>
-            <DetalleProducto products={product}/>
+            <DetalleProducto {...product}/>
         </>
     )
 }

@@ -2,7 +2,7 @@ import Button from "../button/button";
 import {useState} from 'react';
 
 const Contador = (props) => {
-    const {count, setContador} = useState(props.contador)
+    const {count, setCount} = useState(props.contador)
 
    
 

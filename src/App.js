@@ -21,7 +21,7 @@ function App() {
         <Routes>
             <Route path='/' element={<GaleriaConteiner titulo="Productos"/>}></Route>
             <Route path='/category/:idcategoria' element={<GaleriaConteiner titulo="Productos"/>}></Route>
-            <Route path='/detail/:idproducto' element={<DetalleProductoContainer/>} />
+            <Route path='/detail/:idproducto' element={<DetalleProductoContainer />}></Route>
         </Routes>
     </BrowserRouter>    
   </div>

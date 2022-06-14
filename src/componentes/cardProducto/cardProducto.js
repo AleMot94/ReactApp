@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import'./cardProducto.css';
 
 const CardProducto = ({id,name, imag, price}) => {
@@ -8,9 +8,8 @@ const CardProducto = ({id,name, imag, price}) => {
             <div className="card-body">
                 <h5 className="card-title">{name}</h5>
                 <p className="card-text">{price}</p>
-                <Link to={`/detail/${id}`}>ver detalle</Link>
             </div>
-            
+            <NavLink to={`/detail/${id}`}>ver detalle</NavLink>
       </div>
         
     )

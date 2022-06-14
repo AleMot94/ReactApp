@@ -1,7 +1,7 @@
 import CardProducto from "../cardProducto/cardProducto"
-const DetalleProducto = ({products}) => {
+const DetalleProducto = ({product}) => {
     return (
-        <CardProducto {...products}/>
+        <CardProducto {...product}/>
     )
 }
 
