@@ -1,7 +1,15 @@
-import CardProducto from "../cardProducto/cardProducto"
-const DetalleProducto = ({product}) => {
+
+
+const DetalleProducto = ({id, name, price, imag}) => {
     return (
-        <CardProducto {...product}/>
+        <div className="card">
+            <img src={imag} className="card-img-top" alt={name}/>
+            <div className="card-body">
+                <h5 className="card-title">{name}</h5>
+                <p className="card-text">{price}</p>
+            </div>
+            
+      </div>
     )
 }
 

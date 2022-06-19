@@ -1,24 +1,24 @@
-import { useState, useEffect} from 'react'
-import { getProductById } from '../../Productos'
-import { useParams } from 'react-router-dom'
-import DetalleProducto from '../detalleProducto/detalleProducto'
+import DetalleProducto from "../detalleProducto/detalleProducto"
+import { useEffect, useState } from "react"
+import { useParams } from "react-router-dom"
+import { getProductById } from "../../Productos"
 
-const DetalleProductoContainer = () => {
+const DetalleProductoConteiner = () => {
     const [product, setProduct] = useState()
-    const { idproducto } = useParams()
+    const {idproducto} = useParams()
 
-    useEffect(() =>{
-                        getProductById(idproducto).then(resp => {
-                            setProduct(resp)
-                        },[] )
-                    }
-                )
-    return (
+    useEffect( () => {
+        getProductById(idproducto)
+        .then(resp => setProduct(resp))
+    }, [])
+
+
+    return(
         <>
-            <h4>Descripcion Producto</h4>
+            <h3>Detalle</h3>
             <DetalleProducto {...product}/>
         </>
     )
 }
 
-export default DetalleProductoContainer
+export default DetalleProductoConteiner

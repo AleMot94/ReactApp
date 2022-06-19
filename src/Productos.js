@@ -3,7 +3,7 @@ const products = [
         name: 'Samsung Galaxy Z Flip 3', 
         price: 600,
         category: 'celular',
-        imag:'./imagenes/samsung galaxy z flip 3.jpg',
+        imag:'/imagenes/samsung galaxy z flip 3.jpg',
         stock: 20, 
         description:'Descripcion de samsung galaxy z flip 3'
     },
@@ -12,7 +12,7 @@ const products = [
         name: 'Notebook ASUS X515EA 15,6', 
         price: 1100, 
         category: 'notebooks', 
-        imag:'./imagenes/notebook asus.jpeg',
+        imag:'/imagenes/notebook asus.jpeg',
         stock: 20, 
         description:'FHD Core I7 8GB SSD 512GB Windows 11'
     },
@@ -21,7 +21,7 @@ const products = [
         name: 'Monitor Gamer Curvo Asus', 
         price: 300, 
         category: 'monitores', 
-        imag:'./imagenes/monitor gamer.jpeg',
+        imag:'/imagenes/monitor gamer.jpeg',
         stock: 20, 
         description:'TUF Gaming VG24VQ led 23.6 " negro 100V/240V'
     },
@@ -30,7 +30,7 @@ const products = [
         name: 'Minicomponente LG Xboom CK57', 
         price: 350, 
         category: 'audio', 
-        imag:'./imagenes/minicomponente lg.jpg',
+        imag:'/imagenes/minicomponente lg.jpg',
         stock: 20, 
         description:'negro con bluetooth 1100W de potencia - 220'
     },

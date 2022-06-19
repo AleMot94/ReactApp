@@ -1,7 +1,7 @@
 import './App.css'
 import Navbar from './componentes/navBar/navBar';
 import GaleriaConteiner from './componentes/galeriaConteiner/galeriaConteiner';
-import DetalleProductoContainer from './componentes/detalleProducto/detalleProducto';
+import DetalleProductoConteiner from './componentes/detalleProductoConteiner/detalleProductoConteiner';
 import { BrowserRouter, Routes, Route} from 'react-router-dom'
 
 
@@ -21,7 +21,7 @@ function App() {
         <Routes>
             <Route path='/' element={<GaleriaConteiner titulo="Productos"/>}></Route>
             <Route path='/category/:idcategoria' element={<GaleriaConteiner titulo="Productos"/>}></Route>
-            <Route path='/detail/:idproducto' element={<DetalleProductoContainer />}></Route>
+            <Route path='/detail/:idproducto' element={<DetalleProductoConteiner/>}></Route>
         </Routes>
     </BrowserRouter>    
   </div>
